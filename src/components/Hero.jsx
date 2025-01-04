@@ -1,11 +1,11 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { motion } from "framer-motion";
-
+// import { Icon } from "astro-icon/components";
 import { InvitationModal } from "./InvitationModal";
-import dashboard from "../assets/images/dashboard.jpg";
+import combatEncounter from "../assets/images/combat-encounter-inprogress.png";
 
 export const Hero = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <section
@@ -27,7 +27,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
         >
-          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-primaryText  px-8 sm:px-8 md:px-20 lg:px-4">
+          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold text-primaryText px-8 sm:px-8 md:px-20 lg:px-4">
             <h1 className="md:inline">Dead City</h1>
           </div>
         </motion.div>
@@ -46,13 +46,13 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
         >
           <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
-            <button
-              className="contained-button w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
-              onClick={() => setIsModalOpen(true)}
-              aria-label="Get started"
+            <a
+              href="https://discord.gg/qy4KDn6gru"
+              className="contained-button p-4 px-6"
+              // onClick={() => setIsModalOpen(true)}
             >
-              Get Started on Discord
-            </button>
+              Play for FREE on Discord
+            </a>
           </div>
         </motion.div>
         <motion.div
@@ -62,9 +62,9 @@ export const Hero = () => {
         >
           <div className="relative w-screen flex justify-center ">
             <img
-              src={dashboard.src}
-              alt="Dashboard image"
-              className="w-4/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl main-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
+              src={combatEncounter.src}
+              alt="Combat encounter"
+              className="mx-auto rounded-xl main-border-gray hero-dashboard-border-gradient"
             />
           </div>
         </motion.div>
@@ -85,9 +85,9 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
-      )}
+      )} */}
     </section>
   );
 };

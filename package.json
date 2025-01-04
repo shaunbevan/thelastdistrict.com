@@ -1,14 +1,7 @@
 {
-  "name": "tailcast",
-  "type": "module",
-  "version": "1.0.2",
+  "name": "deadcitydiscord.com",
+  "version": "1.0.0",
   "license": "MIT",
-  "description": "Dark themed website template built on AstroJS, designed for fictional startup",
-  "author": {
-    "name": "Mateusz Wyrębek (matt765)",
-    "email": "mateusz.wyrebek@gmail.com",
-    "url": "https://matt765-portfolio.vercel.app/"
-  },
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -20,10 +13,10 @@
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/inter": "^5.0.18",
+    "@iconify-json/lineicons": "^1.2.4",
     "astro": "^4.9.2",
+    "astro-icon": "^1.1.5",
     "framer-motion": "^11.2.10",
-    "npm": "^10.8.1",
-    "npm-check-updates": "^16.14.20",
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {

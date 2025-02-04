@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
-import { GithubIcon } from "../assets/icons/GithubIcon";
-
 const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },
   { label: "Features", href: "/#features", ariaLabel: "Features" },
+  { label: "Instagram", href: "https://www.instagram.com/krucksdev/", ariaLabel: "Instagram" },
   // { label: "FAQ", href: "/#faq", ariaLabel: "FAQ" },
 ];
 
@@ -15,7 +13,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="w-full h-20 flex flex-col justify-center items-center fixed bg-bgDark1 lg:bg-bgDarkTransparent z-40 lg:backdrop-blur-xl"
+      className="w-full h-20 flex flex-col justify-center items-center fixed bg-[#1b1c24] lg:bg-bgDarkTransparent z-40 lg:backdrop-blur-xl"
       aria-label="Main navigation"
     >
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
@@ -27,11 +25,10 @@ export const Navbar = () => {
         >
           <a href="/#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white mr-2 text-6xl">
-                <TailcastLogo />
-              </div>
               <div className="text-white font-['Inter'] font-bold text-xl">
-                Dead City
+                <span>The Last District</span>
+                <span className="text-[#FFA500] mx-2">|</span>
+                <span className="text-secondaryText font-bold\">A Discord Bot</span>
               </div>
             </div>
           </a>

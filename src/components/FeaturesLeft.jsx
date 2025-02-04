@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 
 import look from "../assets/images/look-inside.png";
-import inventory from "../assets/images/inventory.png";
-import tasks from "../assets/images/tasks.png";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
-export const Features1 = () => {
+export const FeaturesLeft = () => {
   return (
     <section
-      className="w-full bg-bgDark2 pt-24 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0    md:pt-[12vw] lg:pt-16"
+      className="w-full bg-[#242630] pt-24 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0    md:pt-[12vw] lg:pt-16"
       id="features"
     >
       <motion.div
@@ -47,29 +45,24 @@ export const Features1 = () => {
             </div>
           </div>
           <div className="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
-            <div className="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
-              <div className="mb-4 py-3 pl-3 pr-2 rounded">
-                <img
-                  src={look.src}
-                  alt="Looking around"
-                  className="rounded-xl main-border-gray mx-auto sm:mx-unset"
-                />
-              </div>
-              <div className="py-3 pl-3 pr-2 rounded ">
-                <img
-                  src={inventory.src}
-                  alt="Inventory"
-                  className="rounded-xl main-border-gray mx-auto sm:mx-unset"
-                />
-              </div>
-            </div>
-            <div className="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
-              <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
-                <img
-                  src={tasks.src}
-                  alt="Task list"
-                  className="rounded-xl main-border-gray"
-                />
+            <div className="mb-8 lg:mb-0 w-full px-2 lg:pl-16 flex flex-col justify-center md:pl-8">
+              <div className="relative w-full aspect-square">
+                <div className="relative w-full h-full">
+                  <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-white/5 
+                    shadow-[0_8px_40px_-12px_rgba(0,0,0,0.9)] 
+                    after:absolute after:inset-0 after:shadow-[inset_0_0_100px_rgba(0,0,0,0.15)]"
+                  >
+                    <div className="absolute inset-0 bg-[#242630]"></div>
+                    
+                    <div className="absolute inset-0 flex items-center justify-center p-3">
+                      <img
+                        src={look.src}
+                        alt="Looking around"
+                        className="w-full h-full object-contain filter contrast-125 drop-shadow-[0_8px_16px_rgba(0,0,0,0.35)]"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -78,3 +71,5 @@ export const Features1 = () => {
     </section>
   );
 };
+
+

@@ -2,8 +2,11 @@
 import Layout from '../layouts/Layout.astro'
 import { Hero } from '../components/Hero.jsx'
 import { Navbar } from '../components/Navbar.jsx'
-import { Features1 } from '../components/Features1.jsx'
-import { FeaturesDiagonal } from '../components/FeaturesDiagonal.jsx'
+import { FeaturesLeftZombies } from '../components/FeaturesLeft-Zombies.jsx'
+import { FeaturesRightCombat } from '../components/FeaturesRight-Combat.jsx'
+import { FeaturesLeftSearch } from '../components/FeaturesLeft-Search.jsx'
+import { FeaturesRightRebuild } from '../components/FeaturesRight-Rebuild.jsx'
+import { FeaturesLeftCure } from '../components/FeaturesLeft-Cure.jsx'
 import { FAQ } from '../components/FAQ.jsx'
 import { Footer } from '../components/Footer.jsx'
 import { ScrollUpButton } from '../components/ScrollUpButton'
@@ -11,10 +14,14 @@ import '../styles/Theme.css'
 import '../styles/Diagonals.css'
 ---
 
-<Layout title="Dead City">
+<Layout title="The Last District">
   <Navbar client:load />
   <Hero client:load />
-  <Features1 client:load />
+  <FeaturesLeftZombies client:load />
+  <FeaturesRightCombat client:load />
+  <FeaturesLeftSearch client:load />
+  <FeaturesRightRebuild client:load />
+  <!-- <FeaturesLeftCure client:load /> -->
   <!-- <FeaturesDiagonal client:load /> -->
   <!-- <FAQ client:load />  -->
   <Footer />

@@ -6,5 +6,4 @@ import icon from "astro-icon";
 export default defineConfig({
   integrations: [react(), tailwind(), icon()],
   site: "https://thelastdistrict.com",
-  base: "https://github.com/shaunbevan/thelastdistrict.com",
 });

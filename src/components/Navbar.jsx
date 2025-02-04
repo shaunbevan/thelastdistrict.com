@@ -27,7 +27,7 @@ export const Navbar = () => {
             <div className="flex justify-start items-center grow basis-0">
               <div className="text-white font-['Inter'] font-bold text-xl flex items-center">
               <img 
-                  src="/tld-icon.png"
+                  src={import.meta.env.BASE_URL + 'tld-icon.png'}
                   alt="TLD Icon"
                   className="h-8 w-8 mx-2"
                 />

@@ -1,5 +1,4 @@
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
-import ldLogo from "../assets/images/tld-icon.png";
 
 const footerData = [
   {

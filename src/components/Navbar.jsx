@@ -25,7 +25,12 @@ export const Navbar = () => {
         >
           <a href="/#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white font-['Inter'] font-bold text-xl">
+              <div className="text-white font-['Inter'] font-bold text-xl flex items-center">
+              <img 
+                  src="/tld-icon.png"
+                  alt="TLD Icon"
+                  className="h-8 w-8 mx-2"
+                />
                 <span>The Last District</span>
                 <span className="text-[#FFA500] mx-2">|</span>
                 <span className="text-secondaryText font-bold\">A Discord Bot</span>

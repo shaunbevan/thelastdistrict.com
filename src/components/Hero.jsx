@@ -145,7 +145,7 @@ export const Hero = () => {
             </div>
             
             {/* Description text under both images */}
-            <p className="text-white text-sm text-center lg:text-left max-w-[600px]">
+            <p className="text-white text-sm text-left lg:text-left max-w-[600px]">
               <b>The Last District</b> is a free text-based multiplayer game where survivors and zombies wage epic factional warfare through a custom Discord bot. Choose your side, dominate the city, and shape the apocalypse. Join the Discord now to play!
             </p>
           </div>

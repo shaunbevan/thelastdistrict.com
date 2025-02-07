@@ -16,7 +16,7 @@ export const Navbar = () => {
       className="w-full h-20 flex flex-col justify-center items-center fixed bg-[#1b1c24] lg:bg-bgDarkTransparent z-40 lg:backdrop-blur-xl"
       aria-label="Main navigation"
     >
-      <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
+      <div className="w-full max-w-[1200px] flex justify-between items-center relative px-4 md:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -24,16 +24,16 @@ export const Navbar = () => {
           exit={{ opacity: 0 }}
         >
           <a href="/#home" aria-label="Home">
-            <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white font-['Inter'] font-bold text-xl flex items-center">
-              <img 
+            <div className="flex justify-start items-center">
+              <div className="text-white font-['Inter'] font-bold text-base sm:text-xl flex items-center">
+                <img 
                   src={import.meta.env.BASE_URL + 'tld-icon.png'}
                   alt="TLD Icon"
-                  className="h-8 w-8 mx-2"
+                  className="h-6 w-6 sm:h-8 sm:w-8 mr-1 sm:mr-2"
                 />
-                <span>The Last District</span>
-                <span className="text-[#FFA500] mx-2">|</span>
-                <span className="text-secondaryText font-bold\">A Discord Bot</span>
+                <span className="whitespace-nowrap">The Last District</span>
+                <span className="text-[#FFA500] mx-1 sm:mx-2">|</span>
+                <span className="text-secondaryText font-bold whitespace-nowrap">A Discord Bot</span>
               </div>
             </div>
           </a>
@@ -44,10 +44,10 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="hidden lg:flex h-full pl-12 pb-2">
+          <div className="hidden lg:flex h-full pl-6">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <a
-                className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                className="text-white lg:text-base text-2xl leading-6 mx-3 xl:mx-4 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
                 href={href}
                 aria-label={ariaLabel}
                 key={label}
@@ -59,7 +59,7 @@ export const Navbar = () => {
         </motion.div>
 
         <div
-          className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-bgDark2"
+          className="lg:hidden flex flex-col px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-bgDark2"
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="w-5 h-0.5 bg-gray-500  mb-1"></div>

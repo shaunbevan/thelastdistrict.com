@@ -3,7 +3,12 @@ import { InstagramIcon } from "../assets/icons/InstagramIcon";
 const footerData = [
   {
     title: "Important Links",
-    items: [],
+    items: [
+      {
+        name: "Terms & Privacy",
+        href: "/terms"
+      }
+    ],
   },
 ];
 
@@ -26,26 +31,26 @@ export const Footer = () => {
                 </a>
               </div>
             </div>
-            {/* <div className="w-full lg:w-2/3  lg:pl-16 hidden lg:flex flex-wrap justify-between">
+            <div className="w-full lg:w-2/3  lg:pl-16 lg:flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-primaryText">
-                  Important Links
+                  {footerData[0].title}
                 </h3>
                 <ul>
                   {footerData[0].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.name}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.href}
+                        aria-label={item.name}
                       >
-                        {item}
+                        {item.name}
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

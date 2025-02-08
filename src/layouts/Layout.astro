@@ -5,6 +5,7 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
+import tldLogo from "../assets/images/tld-logo-xpro.svg";
 
 export interface Props {
   title: string;
@@ -12,7 +13,7 @@ export interface Props {
 
 const { title } = Astro.props;
 const description = "Persistent Multiplayer Zombies vs Survivors Game Played in Discord";
-const image = new URL("/assets/icons/bot-icon.png", Astro.url); // This will create an absolute URL
+const image = tldLogo.src;
 ---
 
 <!doctype html>

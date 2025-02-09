@@ -24,6 +24,16 @@ const image = tldLogo.src;
     <link rel="icon" type="image/svg+xml" href="/tld-icon.png" />
     <meta name="generator" content={Astro.generator} />
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54L88XW2YE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-54L88XW2YE');
+    </script>
+
     <!-- Primary Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />

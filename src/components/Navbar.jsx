@@ -8,6 +8,19 @@ const navbarLinks = [
   // { label: "FAQ", href: "/#faq", ariaLabel: "FAQ" },
 ];
 
+// Add new vote button component after navbarLinks
+const VoteButton = () => (
+  <a
+    href="https://top.gg/bot/1190773943330668666/vote"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-4 py-2 bg-[#FFA500] text-white rounded-lg font-medium hover:bg-[#FF8C00] transition-colors duration-300 hover:scale-105 mt-2 lg:text-base text-2xl"
+    aria-label="Vote for bot on top.gg"
+  >
+    Vote
+  </a>
+);
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -44,7 +57,7 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="hidden lg:flex h-full pl-6">
+          <div className="hidden lg:flex h-full pl-6 items-center">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <a
                 className="text-white lg:text-base text-2xl leading-6 mx-3 xl:mx-4 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
@@ -55,6 +68,7 @@ export const Navbar = () => {
                 {label}
               </a>
             ))}
+            <VoteButton />
           </div>
         </motion.div>
 
@@ -92,6 +106,9 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
+              <div onClick={() => setIsOpen(false)}>
+                <VoteButton />
+              </div>
             </div>
           </motion.div>
         )}

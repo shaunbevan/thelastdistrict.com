@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../components/Navbar.jsx';
+import { getEntry } from 'astro:content';
+
+// Get the patch notes content
+const entry = await getEntry('patch-notes', 'index');
+const { Content } = await entry.render();
+
+---
+
+<Layout>
+  <Navbar client:load />
+  <div class="min-h-screen bg-[#1b1c24] py-12 pt-32">
+    <div class="max-w-3xl mx-auto p-6 prose">
+      <Content />
+    </div>
+  </div>
+</Layout>
+
+<style is:global>
+  .prose {
+    @apply text-white;
+  }
+  .prose h1 {
+    @apply text-3xl font-bold mb-8 text-white;
+  }
+  .prose h2 {
+    @apply text-xl font-semibold text-[#FFA500] mt-8 mb-2;
+  }
+  .prose h3 {
+    @apply text-lg font-semibold text-white mt-8 mb-2;
+  }
+  .prose em {
+    @apply text-gray-400;
+  }
+  .prose ul {
+    @apply space-y-2 mt-4 list-none;
+  }
+  .prose li {
+    @apply text-gray-300 relative pl-6;
+  }
+  .prose li:before {
+    content: "•";
+    @apply absolute left-0 top-0;
+  }
+  /* Nested list styling */
+  .prose li > ul {
+    @apply mt-2 space-y-2;
+  }
+  .prose li > ul > li {
+    @apply text-gray-400 pl-6;
+  }
+  .prose li > ul > li:before {
+    content: "-";
+  }
+  /* Strong text styling */
+  .prose strong {
+    @apply text-white font-semibold;
+  }
+</style> 

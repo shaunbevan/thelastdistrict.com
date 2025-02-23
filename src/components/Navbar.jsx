@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },
+  { label: "Patch Notes", href: "/patch-notes", ariaLabel: "Patch Notes" },
   { label: "Features", href: "/#features", ariaLabel: "Features" },
   { label: "Instagram", href: "https://www.instagram.com/krucksdev/", ariaLabel: "Instagram" },
   // { label: "FAQ", href: "/#faq", ariaLabel: "FAQ" },

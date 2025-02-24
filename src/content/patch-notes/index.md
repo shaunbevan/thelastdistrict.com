@@ -1,5 +1,57 @@
 # Patch Notes
 
+## Beta Update 9
+*February 24, 2025*
+
+### New Features
+Introducing OUTBREAKS, a limited-time event where players compete for points to earn rewards while discovering new game content.
+
+#### Outbreak 1: Expansion
+- In this first Outbreak event, players will work together to expand the map from a 7x7 grid to a 10x10 grid. This is achieved through two different methods based on character type:
+  - Survivors: A new mission, "Breaking Through," is available at the City Hall. Survivors must search for a package within a district and deliver it to Corelogic Manufacturing. Completing the mission grants 1 vote to reveal a building.
+  - Rotters: Rotters must kill the Courier Survivors roaming the district. Each successful kill grants 1 vote to uncover a building.
+- How Building Expansion Works:
+    - Once a building receives 5 votes, it is revealed.
+    - Players can travel to newly revealed buildings if they are adjacent to an already discovered building in the district.
+    - The voting system is reset each outbreak, so players will need to work together to uncover the map before the outbreak ends.
+- Outbreak Status
+    - A new Outbreak button has been added to the profile screen. This interface allows players to:
+        - View the current outbreak status and progression
+        - Cast votes for buildings to reveal
+        - Track rankings via the leaderboard
+- Leaderboard & Rewards
+    - Players earn 1 point per completed mission (Breaking Through or Courier Survivor kill).
+    - 1 additional point is awarded for each vote cast.
+    - At the end of the outbreak:
+      - All participants receive a reward.
+      - Top 10 players earn a bonus reward.
+- Pickup Tasks
+    - A new task type has been added where a package spawns at a random location outside a building in the district. Players must find the package and deliver it to a designated drop-off location.
+    - The directions screen provides hints about how far away the package is.
+    - Only players assigned to the task can see the package.
+- Infestations
+  - Rotters now have a new ability called Infestation. Using an animus well power, rotters can spawn infestations inside ruined buildings.
+  - Infestations are stationary objects with high armor but low hit points.
+  - Survivors must destroy infestations before they can begin repairing a building.
+  - Different infestation types can cause stamina or health damage.
+- Permanent Anima Conversion
+    - Rotters can now convert anima into permanent anima, which is not lost on death. The initial conversion rate is 2 temporary anima for 1 permanent anima.
+    - When purchasing anima powers, the well will use temporary anima first before taking from permanent anima.
+    - Only temporary anima can be donated to the well.
+  
+### Improvements
+- Mutations now have a 10% chance to be lost on death. Previously it was a 100% chance to lose a mutation.  
+- Miasma will now appear if 20% of the buildings in the district are ruined.
+- Players can now see available tasks if they already have an active task, making it easier to plan and prioritize missions.  
+- Status maps are now generated as images, ensuring proper formatting and display across all devices.
+- Added the ability for admins to send a system-wide message to all in-game radio (echoes) channels
+
+### Bug Fixes
+* Fixed an issue where the expiration date for bot voting was not accurate.
+* Fixed an issue where tasks were giving out rewards that were not part of the current loot table.
+* Fixed the available training list formatting for desktop
+* Fixed a bug where unread messages would show for messages older than 24 hours
+
 ## Beta Update 8 - Patch 5
 *February 13, 2025*
 

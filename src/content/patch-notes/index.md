@@ -1,5 +1,53 @@
 # Patch Notes
 
+## Beta Update 10
+*March 15, 2025*
+
+### New Features
+Introducing Workers, a passive system that allows both Survivors and Rotters to assign NPCs to various tasks around the district. Workers help maintain or damage buildings and defenses but remain vulnerable to enemy actions.
+#### Worker System
+- Worker Assignment
+  - Players can now assign workers to repair/damage buildings and build/attack barricades.
+  - Each player starts with 3 workers and can obtain up to 5 through gameplay mechanics.
+  - Workers are not visible while traveling but appear once they arrive and begin working.
+- Worker Task Processing
+  - Workers operate in 12-minute intervals (ticks) and work for 10 iterations (total 2 hours) before returning.
+  - Each tick, a worker contributes +1 or -1 toward their assigned task (e.g., repairing a barricade adds +1 health, damaging it removes -1 health).
+- Location Limits & Worker Balance
+  - A maximum of 10 workers can be active at a location at once.
+  - Workers are limited to 5 per faction per location (5 Survivors, 5 Rotters).
+  - In contested locations (both factions present), workers will cancel each other out unless one side has more workers.
+- Worker Vulnerability
+  - Workers can be killed while working or returning to their player.
+  - Players can attack enemy workers to disrupt their tasks.
+  - If a worker is killed, it is removed from the world and returned to the player's pool, requiring a respawn cooldown before reassignment.
+- Worker Fatigue System
+  - Each assigned task adds 20% fatigue to a worker, whether they complete it or not.
+  - Fatigue must be rested off before a worker can be used again.
+  - Workers recover 20% fatigue per hour while resting.
+  - At 100% fatigue, workers are forced to rest for 5 hours before being usable again.
+- Worker Success Rate
+  - Workers have a 100% success rate per tick when uncontested.
+  - If enemy players are present in the building, the worker's success rate drops to 20%, making them significantly less effective.
+- Worker Recall Mechanic
+  - Players can recall workers at any time.
+  - Recalled workers remain vulnerable while returning and can be killed.
+  - If engaged in combat, recalled workers will attempt to flee at the first opportunity.
+- Assigning a Worker Task
+  - Players use an alphanumeric grid of the district map to assign workers.
+  - Example: A3 represents a specific building in the district.
+### Improvements
+- Players can no longer use actions during combat if their stamina is zero.
+- Added Trauma Kits as an item that you can attach to medical belts.
+- The Bloodmoon will no longer appear if Rotters control more than 50% of the district.
+### Bug Fixes
+- Fixed an issue where the Rotter mutation Death's Door could locate inactive players.  
+- Fixed a bug where the "Engineering Equipment Crate" was not removed from a player's inventory after completing the Survivor task: Breaking Through.  
+- Fixed an exploit allowing players to spam votes before the embed updated.  
+- Fixed a bug where charging a Rotter Feral action at max charge still consumed SP.  
+- Fixed an issue where using an item from the Search screen did not return an error if the player lacked stamina.
+- The Rotter mutation Shriek will no longer summon Rotter infestation.
+
 ## Beta Update 9
 *February 24, 2025*
 

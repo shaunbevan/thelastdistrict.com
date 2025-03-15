@@ -47,6 +47,7 @@ Introducing Workers, a passive system that allows both Survivors and Rotters to 
 - Fixed a bug where charging a Rotter Feral action at max charge still consumed SP.  
 - Fixed an issue where using an item from the Search screen did not return an error if the player lacked stamina.
 - The Rotter mutation Shriek will no longer summon Rotter infestation.
+- Fixed an issue where you were not able to enter in 3-character text when voting for location expansion.
 
 ## Beta Update 9
 *February 24, 2025*

@@ -1,5 +1,98 @@
 # Patch Notes
 
+## Beta Update 11
+*April 6, 2025*
+
+### New Features
+
+#### Corpses & Feeding
+- When NPC survivors are killed by Rotters, they now leave behind a corpse.
+- Corpses are lootable only by the killer Rotter for the first 15 minutes. After that, all Rotters can feed from them.
+- Corpses expire after a set time.
+- Body parts on a corpse have different rarity tiers, affecting the strength and duration of buffs or powers granted when consumed.
+- Only Player Rotters can feed on corpses. NPCs will not interact with them.
+
+#### New Feral Actions
+- **Infectious Claw**: Melee feral action that has a chance to infect Survivor players. NPC survivors are immune to infection.
+- **Gash**: Melee feral action that has a chance to apply the Bleeding status to both players and NPCs.
+
+#### Bulk Worker Orders
+- You can now issue bulk commands for managing workers:
+  - Recall all active workers
+  - Rest all idle workers
+  - Respawn all dead workers
+- These options are available via the Assign All Worker menu.
+
+#### Infection System
+- Infection is a new persistent stat ranging from 0 to 100 that alters character behavior based on faction.
+
+#### Survivors
+- 25+: Hunger and thirst deplete more quickly.
+- 50+: Healing is reduced by 50%.
+- 75+: Automatically converts to a Rotter.
+
+#### Rotters
+- <75: Animus Well power costs are increased.
+- <50: Healing effects from powers and corpse feeding are halved.
+- <25: Becomes eligible for revival into a Survivor.
+
+#### Ways to Gain Infection
+- Survivors: Using melee weapons against Rotters, being infected by Rotter feral attacks, consuming contaminated items, or dying.
+- Rotters: Consuming certain body parts from corpses.
+
+#### Ways to Heal Infection
+- Survivors: Use of special medical items that reduce infection points.
+- Rotters: Dying (being knocked down) reduces infection.
+
+#### Revive & Death Changes
+- Infection now governs whether a player can be converted between factions:
+  - Survivors must have 75+ infection to be turned into Rotters upon death.
+  - Rotters must have 25 or less infection to be eligible for revival into Survivors.
+- Revive Syringes no longer revive Rotters by default but instead lower their infection level, making revival possible once below 25 infection.
+
+#### Drone Mission & Survivor Map Update
+- City Hall maps no longer update passively.
+- New mission added: **Black Box Down**  
+  - Survivors must locate and retrieve data from a crashed drone somewhere in the district.
+  - Returning the data to City Hall will update the district's status map.
+  - The mission can be repeated each time an update is needed.
+
+#### Animus Well Map
+- Rotters can now view a map showing all currently Ruined buildings in the district by visiting any Animus Well.
+- The map only displays buildings with Ruined status and is only accessible to Rotters.
+
+#### Bleeding Changes
+- The Bleeding status now causes 1 HP damage at the start of each combat turn.
+- Bleeding does not expire on its own and must be stopped using healing items or powers.
+
+#### New Descriptions
+- Player Rotter inspection now includes a line that gives a vague description of their current anima levels.
+- All player inspections now include a description of infection level, giving players a hint at how close someone is to turning or reverting.
+
+#### Drag Mechanic
+- Rotters can now drag Player Survivors into or out of a building if:
+  - The building has no barricades
+  - The doors are open
+- This option is found in the Inspect Player screen and allows Rotters to move Survivors for tactical or RP reasons.
+
+#### Grab Relocation
+- The "Grab" option for Rotters has been moved to the Inspect Player screen for consistency with other player-targeted actions.
+
+### Improvements
+- Player Rotters will no longer lose mutations when they are killed.
+- Miasma will now always spawn throughout the district no matter the number of ruined buildings.
+- City Hall Status Maps now use the new alphanumeric grid system style.
+
+### Bug Fixes
+- Fixed a bug where removing an item from your Auto Trash List only allowed items from the first page.
+- Fixed a bug where Pick Up mission descriptions in the Direction menu were showing for rotters.
+- Fixed a bug where players created on other Discord servers wouldn't have their role updated on the support server when applicable.
+- Fixed a bug where if an opponent tried to flee, the attacker wasn't able to do any other attacks.
+- Fixed an issue where the bloodmoon did not spawn in certain conditions.
+- Fixed a bug where the Rotter's Shriek action would pull nearby Workers.
+
+
+
 ## Beta Update 10
 *March 15, 2025*
 

@@ -1,5 +1,54 @@
 # Patch Notes
 
+## Beta Update 11 Patch 1
+*April 27, 2025*
+
+#### New worker types: Guard and Medic
+- Guards will give their faction members +10 AP if they are in the same location
+- Medic will heal every member of their faction every tick
+- Guards and Medics get tired quicker
+- You can gain medics and guards only through outbreak rewards for now, but eventually they will be available via game mechanics
+- You can assign one of your workers to a guard/medic type through the individual worker detail screen
+- There can only be one guard/medic per faction per location at a time
+
+#### Multiple Effect Consumables
+- Consumable items can now have multiple effects, including items that might cause infection along with other bonuses
+
+#### Player Rotter Protection System
+- Player Rotters are now protected by other NPC rotters in the same location
+- When a Player Rotter is in a room with an NPC rotter they will not be targetable by survivors
+- A player rotter with the horde-mentality skill will also not be targetable by survivors and they will not show up on the zombie list until all NPC rotters are killed or removed from the location
+- **New Item**: Biothermal Scanners
+  - Limited-charged item that allows players a chance to scan the room for hidden rotters
+  - There's a chance that the device will not detect hidden zombies
+  - Identifying player rotters in the room does not allow survivors to attack the player rotter. NPCs must be killed beforehand
+
+#### Player Events Screen
+- Added a Player Events screen in the profile menu that will show significant player-related messages
+- These will be different than the location event log that shows events that happen at a specific location
+- The player events screen will show you information about who attacked you, how you died, when you gained a skill point etc.
+
+#### Armor Durability Changes
+- Being killed will significantly reduce the amount of durability your armor has, including Player Rotters wearing armor
+
+## Improvements
+- Infection level is now visible in the footer
+- Updated the death messaging
+- Player rotters will now be able to manage their inventory and equip/unequip items
+  - For the most part, they will not be able to use most items but they will be able to equip/unequip armor
+- Updated the Equipment screen to show more information about the items the player is wearing, along with the combat actions they will have access to when wielding a weapon or unarmed
+- Survivor players can now use ammo items to reload their equipped weapons
+- Changed the way ammo works: 
+  - Ammo no longer has a quantity
+  - Using an ammo item will reload the weapon up to its full capacity
+- Added a "Message from the Mayor" section at the top of the Profile screen, which will display important developer announcements and updates when available.
+
+## Bug Fixes
+- Fixed a bug where Discord roles were not set correctly if you were killed and had a certain level of infection
+- Fixed a bug where the barricade action was sometimes called when you opened the barricade status map
+- Fixed a bug where player rotters were able to grab and drag other player rotters
+- Fixed a bug where consuming a corpse body part with a stronger effect would not always use the stronger effect
+
 ## Beta Update 11
 *April 6, 2025*
 

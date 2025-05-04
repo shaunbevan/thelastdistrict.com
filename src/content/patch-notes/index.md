@@ -1,5 +1,30 @@
 # Patch Notes
 
+## Beta Update 11 Patch 3
+*May 4, 2025*
+
+## Improvements
+- Added the alphanumeric coordinates of a building to the /look embed.
+- Rotters will spawn inside ruined buildings if there is enough room; therefore, providing more protection for player rotters.
+- Increased the amount of infection caused by "Infectious Claw" attack from 5% to 8%
+- Increased the amount of infection caused by NPC rotters from from 2% to 5%
+
+## Bug Fixes
+- Fixed a bug where body parts were not applying the correct effect duration.
+- Fixed an issue where NPC rotters were creating hordes greater than 5 inside buildings.
+
+## Beta Update 11 Patch 2
+*April 29, 2025*
+
+## Improvements
+- Lowered the hit chance for survivor weapons across the board. Increased the damage for Level 5 actions for some weapons to make the damage a bit higher than the Level 0 action. I'm going to be monitoring this closely and will adjust further if needed.
+- Increased the hit chance for zombie attack actions.
+- Player Rotters will now see a "protected" flag in the embed footer when they are hidden or partially hidden by NPC rotters.
+
+## Bug Fixes
+- Fixed a bug where the "Use Healing Item" from the Survivor Inspect menu was returning an error.
+- Fixed a bug where the survivor's "Listen" ability would still locate Rotters hidden by the Horde Mentality skill.
+
 ## Beta Update 11 Patch 1
 *April 27, 2025*
 

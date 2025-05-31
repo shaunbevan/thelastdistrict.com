@@ -1,5 +1,75 @@
 # Patch Notes
 
+## Beta Update 12
+*May 30, 2025*
+
+Hey everyone, this is a big update. I'm finally laying the groundwork for the core vision of The Last District: fighting for control over the district. This release brings in the first part of the faction war system with a fully working building control mechanic. Let's walk through what's new.
+
+## New Features - Building Control System
+The long-term goal is to make control over buildings meaningful. To get there, we need three things:
+- A way for a faction to take control of a building
+- A reason to care about holding a building
+- Benefits that come with owning a building
+
+This update implements the first of those: the ability to control buildings.
+
+### How it works:
+- When a building is contested, both sides have to push toward their version of control:
+  - Survivors need to fully repair the building
+  - Rotters need to fully ruin it
+- Once the building is in the proper state, a faction player can send a Worker using the Claim Building action. The worker will arrive after a short delay and spawn inside the building.
+- This starts a 2-hour timer for claiming the building.
+- To stop this timer, the opposing faction must:
+  - Clear all enemies (player and NPC) from the building
+  - Use the Stop Challenge command from the /look embed
+  - This is a high-stamina action and resets the timer completely
+- Once reset, the opposing team can repair or ruin the building to get it into their preferred state and send their own worker to claim it.
+- Information about the state of the building and faction control can be found in the look embed.
+
+### Once claimed:
+- The building becomes protected for 24 hours. During protection:
+  - Survivor buildings receive free barricades up to sturdy, and barricades cannot be removed
+  - Rotter-controlled buildings prevent attacks on zombie players inside
+
+### Taking control from an enemy faction:
+- To flip a building that is already controlled:
+  - Bring the building to the required state (repaired for survivors, ruined for rotters)
+  - Make sure no enemies are inside
+  - Use the high-stamina Challenge Control action
+  - This puts the building back into a contested state
+
+## Map Reset
+To test the new building control system, I'm resetting the state of the entire map.
+- All buildings will start off contested and be at an even ruined state (Exposed) to give both factions the same chance of repairing/damaging to take control.
+
+## Improvements and Changes
+### Building System Updates
+- Survivors can only build barricades if they control the building and the building has no damage
+- Survivor-only actions like training are now restricted to survivor-controlled buildings
+- The ruined state no longer penalizes search attempts unless the building is controlled by rotters
+- Stockpiles are now safe and will not be destroyed regardless of state or control
+- Rotter-controlled buildings now spawn a thorny infestation with high hit points
+- Zombie players are still protected when inside a room with an NPC rotter
+- Animus wells can only be used by rotters when their faction controls the building
+
+### Worker Updates
+- Survivor workers only build barricades on survivor-owned and fully repaired buildings
+- Guard workers now spawn inside buildings
+- Only one worker is needed to claim a building. If a worker is already present from the opposing faction, you cannot send your own
+- Workers will only claim a building if it is contested and the building state favors their faction
+- Claim workers now always spawn inside the building
+
+### Map Updates
+- Maps now show whether a building is controlled, contested, or unclaimed
+- Animus well maps no longer auto-update. Rotters must purchase updates using anima
+
+### Rotter Changes
+- Rotters now have a chance to lose infection when hit
+- Added stamina costs to several rotter abilities, including Shriek, Drag, and Death's Grasp
+
+This is the first step in building out a real faction control loop and will set the stage for upgrades, scoring, and long-term strategy. As always, keep the feedback coming so we can tune it as we go.
+
+
 ## Beta Update 11 Patch 3
 *May 4, 2025*
 
